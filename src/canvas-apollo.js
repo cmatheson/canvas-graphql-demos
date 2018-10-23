@@ -1,7 +1,7 @@
 import gql from "graphql-tag";
 import ApolloClient from "apollo-boost";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { ApolloProvider, Query } from "react-apollo";
+import { ApolloProvider, Query, Mutation } from "react-apollo";
 
 if (process.env.REACT_APP_CANVAS_TOKEN == null) {
   throw new Error(
@@ -26,4 +26,4 @@ const client = new ApolloClient({
   })
 });
 
-export { client, gql, ApolloProvider, Query };
+export { client, gql, ApolloProvider, Query, Mutation };

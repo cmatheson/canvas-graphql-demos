@@ -5,6 +5,7 @@ import { ApolloProvider, client } from "./canvas-apollo";
 // graphql examples
 import SimpleQueryExample from "./SimpleQueryExample";
 import PaginationExample from "./PaginationExample";
+import MutationExample from "./MutationExample";
 
 let Intro = () => <h2>Click a link above to get started.</h2>;
 
@@ -37,7 +38,8 @@ class App extends Component {
 
         <nav>
           <Link to="query-example">Simple Query</Link> |{" "}
-          <Link to="pagination-example">Pagination</Link>
+          <Link to="pagination-example">Pagination</Link> |{" "}
+          <Link to="mutation-example">Mutation</Link>
         </nav>
 
         <hr />
@@ -49,6 +51,7 @@ class App extends Component {
             path="pagination-example"
             courseId={this.state.id}
           />
+          <MutationExample path="mutation-example/*" courseId={this.state.id} />
         </Router>
       </ApolloProvider>
     );
