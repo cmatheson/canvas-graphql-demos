@@ -6,6 +6,7 @@
     "@reach/router": "^1.2.1",
     "apollo-boost": "^0.1.16",
     "graphql": "^14.0.2",
+    "graphql-anywhere": "^4.1.27",
     "immutability-helper": "^2.8.1",
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
